@@ -75,14 +75,14 @@ const navItems = computed(() => {
   <!-- Foooter -->
   <section class="bg-gray-900">
     <div
-      class="mx-auto max-w-screen-xl space-y-8 overflow-hidden px-4 py-12 sm:px-6 lg:px-8"
+      class="mx-auto max-w-screen-xl space-y-7 overflow-hidden px-4 py-6 lg:px-8"
     >
       <nav class="-mx-5 -my-2 flex list-none flex-wrap justify-center">
-        <li v-for="(item, index) in navItems" :key="index" class="px-5 py-2">
+        <li v-for="(item, index) in navItems" :key="index" class="px-3 py-2">
           <a
             href="#"
             @click="handleNavigation(item)"
-            class="nav-link text-base leading-6 text-gray-500 hover:text-main-4"
+            class="nav-link text-sm text-gray-500 hover:text-main-4 lg:text-base"
           >
             {{ item.name }}
           </a>
@@ -99,8 +99,7 @@ const navItems = computed(() => {
           <span class="sr-only">{{ platform.name }}</span>
           <Icon
             :icon="`simple-icons:${platform.name.toLocaleLowerCase()}`"
-            width="23"
-            height="23"
+            class="size-4 lg:size-5"
           />
         </a>
       </div>
