@@ -31,7 +31,7 @@ export default {
 
       <router-link
         to="/team"
-        class="mx-auto my-6 block w-44 rounded-full bg-main-4 px-4 py-2 text-center text-white hover:bg-purple-900 focus:bg-purple-950 focus:ring-2 focus:ring-accent md:text-lg"
+        class="mx-auto my-6 block w-44 rounded-full bg-main-4 px-4 py-2 text-center text-white hover:bg-purple-900 focus:ring-2 active:bg-purple-950 active:ring-accent md:text-lg"
       >
         <span>Selengkapnya </span>
       </router-link>

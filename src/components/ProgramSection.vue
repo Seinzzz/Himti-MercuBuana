@@ -1,4 +1,4 @@
-<script setup lang="ts"></script>
+<script lang="js"></script>
 
 <template>
   <section id="program" class="lg:pt-30 px-5 pt-20 text-white">

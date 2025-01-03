@@ -27,7 +27,6 @@ export default {
 
         if (carouselInstance) {
           carouselInstance.destroy()
-          console.log('Carousel destroyed successfully.')
         }
 
         isCarouselInitialized.value = false
@@ -39,7 +38,6 @@ export default {
     const reinitializeCarousel = () => {
       try {
         window.HSCarousel.autoInit()
-        console.log('Carousel reinitialized successfully.')
         isCarouselInitialized.value = true
       } catch (error) {
         console.error('Error reinitializing carousel:', error)
@@ -160,7 +158,7 @@ export default {
       <!-- Navigation Buttons -->
       <button
         type="button"
-        class="hs-carousel-prev absolute start-0 top-1/2 inline-flex h-[46px] w-[46px] -translate-x-4 -translate-y-1/2 transform items-center justify-center rounded-full bg-accent text-gray-800 hover:bg-secondary hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-50"
+        class="hs-carousel-prev absolute start-0 top-1/2 inline-flex h-[46px] w-[46px] -translate-x-4 -translate-y-1/2 transform items-center justify-center rounded-full bg-accent/[.8] text-gray-800 hover:bg-purple-900 active:bg-purple-950 hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-50"
         aria-label="Previous slide"
       >
         <span class="text-2xl" aria-hidden="true">
@@ -175,19 +173,17 @@ export default {
 
       <button
         type="button"
-        class="hs-carousel-next absolute end-0 top-1/2 inline-flex h-[46px] w-[46px] -translate-y-1/2 translate-x-4 transform items-center justify-center rounded-full bg-accent text-gray-800 hover:bg-secondary hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-50"
+        class="hs-carousel-next absolute end-0 top-1/2 inline-flex h-[46px] w-[46px] -translate-y-1/2 translate-x-4 transform items-center justify-center rounded-full bg-accent/[.8] text-gray-800 hover:bg-purple-900 active:bg-purple-950 hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-50"
         aria-label="Next slide"
       >
-        <span class="sr-only">Next</span>
         <span class="text-2xl" aria-hidden="true">
-          <span class="rounded-full bg-red-500">
-            <Icon
-              icon="material-symbols:chevron-right-rounded"
-              color="black"
-              width="24"
-            />
-          </span>
+          <Icon
+            icon="material-symbols:chevron-right-rounded"
+            color="black"
+            width="24"
+          />
         </span>
+        <span class="sr-only">Next</span>
       </button>
     </div>
   </div>

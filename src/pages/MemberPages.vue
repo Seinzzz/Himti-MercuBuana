@@ -97,14 +97,16 @@ export default {
 
       <!-- Tambahkan dropdown filter -->
       <div class="mt-6">
-        <label for="role" class="mr-4 text-white">Filter by Role:</label>
-
+        <label for="role" class="mr-4 select-none text-white"
+          >Filter by Role:</label
+        >
         <select
           id="role"
           v-model="selectedRole"
-          class="rounded-md bg-gray-800 px-4 py-2 text-white"
+          class="rounded-lg border-gray-200 bg-gray-700 px-3 py-2 pe-9 text-sm focus:border-gray-500 focus:ring-gray-500 disabled:pointer-events-none disabled:opacity-50"
         >
           <option value="all">All</option>
+          <Icon icon="fe:arrow-down" class="" />
           <option v-for="role in roles" :key="role" :value="role">
             {{ role }}
           </option>
@@ -119,7 +121,7 @@ export default {
         :key="member.id"
         class="rounded-lg bg-main-3"
       >
-        <MemberCard :member="member" />
+        <MemberCard :member="member" :class="['text-xs lg:text-lg']" />
       </div>
     </div>
   </div>
