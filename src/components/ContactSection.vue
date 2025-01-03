@@ -159,7 +159,7 @@ const MessageToWhatsapp = () => {
                   >Institusi atau Organisasi</label
                 >
                 <div class="flex items-center">
-                  <i class="fas fa-user absolute left-3 text-gray-400"></i>
+                  <i class="fas fa-users absolute left-3 text-gray-400"></i>
                   <input
                     type="text"
                     id="institusi"
