@@ -27,7 +27,7 @@ export default {
           href="/"
           class="inline-flex items-center rounded-full border border-transparent bg-accent px-4 py-2 text-base font-medium text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-0"
         >
-          <Icon icon="akar-icons:arrow-left" class="p" />
+          <Icon icon="akar-icons:arrow-left" class="mr-2" />
           Go back home
         </a>
       </div>
@@ -41,9 +41,10 @@ export default {
         </div>
         <div class="relative flex justify-center">
           <span
-            class="bg-main-1 px-2 text-sm text-gray-500 dark:bg-gray-800 dark:text-gray-400"
+            class="bg-main-1 px-1 text-sm text-gray-500 dark:bg-gray-800 dark:text-gray-400"
           >
-            If you think this is a mistake, please contact
+            If you think this is a mistake, <br class="md:hidden" />please
+            contact
             <a
               class="mb-8 text-purple-600 hover:text-purple-500"
               target="_blank"
